@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   // 🔥 Active CORS
   app.enableCors({
-    origin: "http://localhost:3001", // 🔥 Autorise uniquement ton frontend Vite
+    origin: "https://dev-place.antoninsimon.fr", // 🔥 Autorise uniquement ton frontend Vite
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // 🔥 Si tu utilises des cookies ou tokens
   });
